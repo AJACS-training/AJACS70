@@ -22,13 +22,12 @@
 今回の講習では、以下の内容について順番に説明します。【実習】の部分はみんなでやる実習、【応用】は早くできてしまった人用の応用課題です。
 
 - 研究現場で頻繁に使われるDBやツールを知る: 統合TV
-- ゲノムデータベースとは
-- 塩基配列データベースの使い方
+- ゲノムデータベースとゲノムブラウザ
   - NCBI
-  - DDBJ
   - ゲノムブラウザ
-    - 【実習】UCSC Genome Browserの使いこなす
--  配列解析入門
+    - 【実習1】UCSC Genome Browserの使いこなす
+- 塩基配列データベース
+- 配列解析入門
   - 配列アラインメント
     - 大域的アラインメントと局所的アラインメント
       - 【実習】BLAST
@@ -53,7 +52,7 @@
 ----
 
 ## 研究現場で頻繁に使われるデータベースやツールを知る
-### [統合TV](http://togotv.dbcls.jp/)
+### [統合TV](https://dbcls.rois.ac.jp/services.html#TogoTV_ja)
 - 生命科学分野の有用なデータベースやツールの使い方を動画で紹介するウェブサイト
     - http://togotv.dbcls.jp/ [![https://gyazo.com/acd9a661ebb043e62cc50176d6ad69ca](https://i.gyazo.com/acd9a661ebb043e62cc50176d6ad69ca.png)](http://togotv.dbcls.jp/)
     - YouTube版もあります　http://youtube.com/togotv/
@@ -66,3 +65,43 @@
     - [統合TVを作ってくれる方、募集中!!](https://twitter.com/bonohu/status/747954940157399040)
 
 ----
+
+## ゲノムデータベースとゲノムブラウザ
+### ゲノムデータベースとは？
+- ゲノム配列を始めとした（遺伝）情報を生物種ごとにまとめたデータベース
+- 狭義にはゲノム配列のデータベースをいう
+
+#### さまざまなゲノムデータベース
+- [NCBI](https://www.ncbi.nlm.nih.gov/) (National Center for Biotechnology Information) の [**Genome**](https://www.ncbi.nlm.nih.gov/genome/)
+  - [生物種ごと(Browse by Organism)](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
+- [PlantGDB](http://www.plantgdb.org)
+  - [Plant Genome Database Japan(PGDB)](http://pgdbj.jp/)
+- 等々
+
+
+### ゲノムブラウザとは？
+
+- 塩基配列解読したゲノム配列とそこに付与（アノテーション）された情報を見るための仕組み
+- オンライン型とローカル型
+  - オンライン型：ウェブブラウザ上で。サーバにあるゲノムデータベースから必要な情報を取り出してこれる
+    - UCSC Genome BrowserやEnsembl Genome Browserなど
+  - ローカル型：手元のコンピュータにインストールして使用
+    - Integrative Genomics Viewer(IGV)など
+
+#### 【実習1】UCSC Genome Browserの使いこなす
+
+----
+
+## 塩基配列データベース
+
+塩基配列(DNAやRNA)のデータベースで、上述のゲノムデータベースやゲノムブラウザの元になっているデータがここに一次ソースとしてバンク（アーカイブ）されている。
+
+### 国際塩基配列データベース共同研究(INSDC)
+
+- [International Nucleotide Sequence Database Collaboration (INSDC)](http://www.insdc.org/) によって、1987年より日欧米の3箇所で塩基配列の登録、データの交換、維持管理を行っている。
+  - かつては、それぞれDDBJ,EMBL,GenBankと呼ばれるデータベース名として
+- 日本では、国立遺伝学研究所の[DDBJセンター](https://www.ddbj.nig.ac.jp/)がそれを担っている。
+
+----
+
+## 配列解析入門
