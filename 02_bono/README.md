@@ -25,11 +25,12 @@
 - ゲノムデータベースとゲノムブラウザ
   - NCBI
   - ゲノムブラウザ
-    - 【実習1】UCSC Genome Browserの使いこなす
+    - 【実習1】UCSC Genome Browserを使いこなす
+    - 【応用1】Ensembl Genome Browserを使いこなす
 - 塩基配列データベース
 - 配列解析入門
   - 配列アラインメント
-    - 大域的アラインメントと局所的アラインメント
+    - 大域的アラインメントと局所的アラインメント
       - 【実習】BLAST
     - 多重配列アラインメントと分子系統樹
       - 【実習】Clustalω
@@ -68,39 +69,83 @@
 
 ## ゲノムデータベースとゲノムブラウザ
 ### ゲノムデータベースとは？
-- ゲノム配列を始めとした（遺伝）情報を生物種ごとにまとめたデータベース
+- ゲノム配列を始めとした（遺伝）情報を生物種ごとにまとめたデータベース
 - 狭義にはゲノム配列のデータベースをいう
 
 #### さまざまなゲノムデータベース
 - [NCBI](https://www.ncbi.nlm.nih.gov/) (National Center for Biotechnology Information) の [**Genome**](https://www.ncbi.nlm.nih.gov/genome/)
-  - [生物種ごと(Browse by Organism)](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
+  - [生物種ごと (Browse by Organism)](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
 - [PlantGDB](http://www.plantgdb.org)
   - [Plant Genome Database Japan(PGDB)](http://pgdbj.jp/)
 - 等々
 
+### ゲノムブラウザとは？
 
-### ゲノムブラウザとは？
-
-- 塩基配列解読したゲノム配列とそこに付与（アノテーション）された情報を見るための仕組み
+- 塩基配列解読したゲノム配列とそこに付与（アノテーション）された情報を見るための仕組み
 - オンライン型とローカル型
   - オンライン型：ウェブブラウザ上で。サーバにあるゲノムデータベースから必要な情報を取り出してこれる
-    - UCSC Genome BrowserやEnsembl Genome Browserなど
+    - UCSC Genome Browser https://genome.ucsc.edu/
+    - Ensembl Genome Browser https://www.ensembl.org/
+    - NCBI Genome Data Viewer https://www.ncbi.nlm.nih.gov/genome/gdv/
+    - TOGO GENOME http://togogenome.org/
   - ローカル型：手元のコンピュータにインストールして使用
-    - Integrative Genomics Viewer(IGV)など
+    - Integrative Genomics Viewer(IGV) https://software.broadinstitute.org/software/igv/
 
-#### 【実習1】UCSC Genome Browserの使いこなす
+#### 【実習1】UCSC Genome Browser
+
+1. **"UCSC Genome Browser"** でググって、そのトップページを開く。
+2. トップページにはツール名がリストされている。一番上にある **"Genome Browser"** をクリックする。
+[![https://gyazo.com/df2e2e72be244cf4060bba364fc542e3](https://i.gyazo.com/df2e2e72be244cf4060bba364fc542e3.jpg)](https://gyazo.com/df2e2e72be244cf4060bba364fc542e3)
+3. 最寄りのミラーサイトに接続するか訊いてくるので、指示に従う。
+[![https://gyazo.com/0a10cb8a25d2a3919506b7ab6fb5335f](https://i.gyazo.com/0a10cb8a25d2a3919506b7ab6fb5335f.png)](https://gyazo.com/0a10cb8a25d2a3919506b7ab6fb5335f)
+4. Genome Browserのページが開くので、生物種(**Human**)とアッセンブリ(**Feb.2009/(GRC37/hg19)**)を選んで、検索後を入力する。[![https://gyazo.com/05ab6f4871c60485d4c54828a7f5f972](https://i.gyazo.com/05ab6f4871c60485d4c54828a7f5f972.png)](https://gyazo.com/05ab6f4871c60485d4c54828a7f5f972)
+5. FAM32A遺伝子のゲノム領域が表示される。[![https://gyazo.com/2032119adde3af87b91266dc6197e0a5](https://i.gyazo.com/2032119adde3af87b91266dc6197e0a5.png)](https://gyazo.com/2032119adde3af87b91266dc6197e0a5)
+6. "Regulation"の"ENC TF Binding..."を"hide"から"show"に変更して、"refresh"ボタンを押す。[![https://gyazo.com/ef4f449cc185c0cd917c978ed356ff93](https://i.gyazo.com/ef4f449cc185c0cd917c978ed356ff93.png)](https://gyazo.com/ef4f449cc185c0cd917c978ed356ff93)
+7. 転写因子結合サイトの情報が追加される。[![https://gyazo.com/703be239476dfeae1985eb0348048bc2](https://i.gyazo.com/703be239476dfeae1985eb0348048bc2.png)](https://gyazo.com/703be239476dfeae1985eb0348048bc2)
+8. いろいろ変更して表示してみましょう。わからなくなったら、図の下に並んでいるボタンの"default tracks"を押すと最初の状態に戻せます。
+
+##### 【復習】 UCSC Genome Browserの統合TV
+
+- 様々な目的の配列を取得する https://doi.org/10.7875/togotv.2017.098
+- 様々な組織、細胞における遺伝子発現データをゲノムブラウザで表示する https://doi.org/10.7875/togotv.2017.111
+- UCSC ゲノムブラウザとともに開発されてきた関連ツールを使った統合TV
+  - UCSC VisiGeneを使って生体内におけるmRNAの局在を調べる https://doi.org/10.7875/togotv.2017.084
+  - UCSC Gene Sorterを使って遺伝子間の関連性を検索する https://doi.org/10.7875/togotv.2017.083
+
+#### 【応用1】Ensembl Genome Browserを使いこなす
+
+Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
+
+##### 【参考】 Ensembl Genome Browserの統合TV
+- 配列を取得する〜 https://doi.org/10.7875/togotv.2017.046
+- 様々な生物種間の配列を比較する http://doi.org/10.7875/togotv.2017.097
+- 過去のバージョンのゲノムアノテーションを調べる http://doi.org/10.7875/togotv.2017.088
+- 遺伝子の場所や周辺情報を調べる http://doi.org/10.7875/togotv.2017.082
+
 
 ----
 
 ## 塩基配列データベース
 
-塩基配列(DNAやRNA)のデータベースで、上述のゲノムデータベースやゲノムブラウザの元になっているデータがここに一次ソースとしてバンク（アーカイブ）されている。
+塩基配列(DNAやRNA)のデータベースで、上述のゲノムデータベースやゲノムブラウザの元になっているデータがここに一次ソースとしてバンク（アーカイブ）されている。
 
-### 国際塩基配列データベース共同研究(INSDC)
+### 国際塩基配列データベース共同研究(INSDC)
 
-- [International Nucleotide Sequence Database Collaboration (INSDC)](http://www.insdc.org/) によって、1987年より日欧米の3箇所で塩基配列の登録、データの交換、維持管理を行っている。
-  - かつては、それぞれDDBJ,EMBL,GenBankと呼ばれるデータベース名として
-- 日本では、国立遺伝学研究所の[DDBJセンター](https://www.ddbj.nig.ac.jp/)がそれを担っている。
+- [International Nucleotide Sequence Database Collaboration (INSDC)](http://www.insdc.org/) によって、1987年より日欧米の3箇所で塩基配列の登録、**データの交換**、維持管理を行っている。
+  - つまり、どこに登録してもデータは他の2つに反映される
+- 日本では、国立遺伝学研究所の[DDBJセンター](https://www.ddbj.nig.ac.jp/)に
+  - 日本語での対応をしてもらえる
+- かつてはDDBJ/EMBL/GenBank。今はDBが増えて表の5種類
+  - それ以外はINSDCの枠外
+- INSDC DBのTable （http://www.insdc.org/ より）
+[![https://gyazo.com/50a7d496b881d2c022bf9a15fecf893c](https://i.gyazo.com/50a7d496b881d2c022bf9a15fecf893c.png)](https://gyazo.com/50a7d496b881d2c022bf9a15fecf893c)
+もしくは、#drbonobon の p30の表2.2参照
+
+#### RefSeq
+
+- DDBJ/EMBL/GenBankに登録されたデータを **NCBIが独自に** curationした二次データベース
+	- INSDには入っていませんが、DDBJからもリンクしているDBCLS謹製の[GGRNA](http://ggrna.dbcls.jp/)を使うと検索可能
+- 【統合TV】 遺伝子のRefSeq IDを調べ、そのmRNA、アミノ酸配列を取得する http://doi.org/10.7875/togotv.2017.086 
 
 ----
 
