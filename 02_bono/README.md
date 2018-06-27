@@ -25,20 +25,24 @@
 - ゲノムデータベースとゲノムブラウザ
   - NCBI
   - ゲノムブラウザ
-    - 【実習1】UCSC Genome Browserを使いこなす
-    - 【応用1】Ensembl Genome Browserを使いこなす
+    - 【実習1】UCSC Genome Browserを使いこなす
+    - 【応用1】Ensembl Genome Browserを使いこなす
 - 塩基配列データベース
-- 配列解析入門
-  - 配列アラインメント
-    - 大域的アラインメントと局所的アラインメント
-      - 【実習】BLAST
-    - 多重配列アラインメントと分子系統樹
-      - 【実習】Clustalω
-      - 【応用】mafft
-  - タンパク質モチーフ・ドメイン検索
-    - 【実習】Pfam
-    - 【応用】InterPro
-    -
+  - 国際塩基配列データベース共同研究(INSDC)
+    - DDBJ/EMBL/GenBank
+    - Sequence Read Archive (SRA)
+   - RefSeq
+- 配列アラインメント
+  - 大域的アラインメントと局所的アラインメント
+    - 【実習2】BLAST
+    - 【応用2】BLAT
+  - 多重配列アラインメントと分子系統樹
+    - 【実習3】Clustalω
+    - 【応用3】mafft
+- タンパク質モチーフ・ドメイン検索
+  - 【実習4】Pfam
+  - 【応用4】InterPro
+    
 ----
 
 ### 講習に際しての注意とお願い
@@ -74,7 +78,7 @@
 
 #### さまざまなゲノムデータベース
 - [NCBI](https://www.ncbi.nlm.nih.gov/) (National Center for Biotechnology Information) の [**Genome**](https://www.ncbi.nlm.nih.gov/genome/)
-  - [生物種ごと (Browse by Organism)](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
+  - [生物種ごと(Browse by Organism)](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
 - [PlantGDB](http://www.plantgdb.org)
   - [Plant Genome Database Japan(PGDB)](http://pgdbj.jp/)
 - 等々
@@ -135,18 +139,50 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
   - つまり、どこに登録してもデータは他の2つに反映される
 - 日本では、国立遺伝学研究所の[DDBJセンター](https://www.ddbj.nig.ac.jp/)に
   - 日本語での対応をしてもらえる
-- かつてはDDBJ/EMBL/GenBank。今はDBが増えて表の5種類
-  - それ以外はINSDCの枠外
 - INSDC DBのTable （http://www.insdc.org/ より）
+  - 現在は、表の5種類のDBがINSDCの対象
 [![https://gyazo.com/50a7d496b881d2c022bf9a15fecf893c](https://i.gyazo.com/50a7d496b881d2c022bf9a15fecf893c.png)](https://gyazo.com/50a7d496b881d2c022bf9a15fecf893c)
-もしくは、#drbonobon の p30の表2.2参照
 
-#### RefSeq
+
+#### DDBJ/EMBL/GenBank
+- 今はAnnotated sequencesと呼ばれている昔からあるDB
+
+#### Sequence Read Archive (SRA)
+- SRAデータも交換されている
+  - DDBJにもあるので、そこから取ると早くダウンロードできる。
+  - DDBJではDDBJ Sequence Read Archive (DRA)と呼ばれることも。 
+- 次世代シークエンサーのデータは以下の3つに収められている
+    - Next Generation reads (=SRA)
+    - Samples
+    - Studies 
+
+上述以外のDB(GEOやPubMedなど)はINSDCの枠外＝データ交換などがなされていない
+
+
+### RefSeq
 
 - DDBJ/EMBL/GenBankに登録されたデータを **NCBIが独自に** curationした二次データベース
-	- INSDには入っていませんが、DDBJからもリンクしているDBCLS謹製の[GGRNA](http://ggrna.dbcls.jp/)を使うと検索可能
+	- RefSeqはINSDには入ってないが、DDBJからもリンクしているDBCLS謹製の[GGRNA](http://ggrna.dbcls.jp/)を使うと検索可能
 - 【統合TV】 遺伝子のRefSeq IDを調べ、そのmRNA、アミノ酸配列を取得する http://doi.org/10.7875/togotv.2017.086 
 
 ----
 
-## 配列解析入門
+## 配列アラインメント
+
+### 大域的アラインメントと局所的アラインメント
+
+#### 【実習2】BLAST
+
+#### 【応用2】BLAT
+
+### 多重配列アラインメントと分子系統樹
+
+#### 【実習3】Clustalω
+
+#### 【応用3】mafft
+
+## タンパク質モチーフ・ドメイン検索
+
+### 【実習4】Pfam
+
+### 【応用4】InterPro
