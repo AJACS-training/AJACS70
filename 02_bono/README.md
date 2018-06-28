@@ -187,6 +187,21 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 #### 【実習2】BLAST
 
+- BLASTとは
+	- Basic Local Alignment Search Tool
+	- 配列類似性検索のデファクトスタンダード
+- BLASTの動作原理
+	- 質問配列(Query)
+	- 検索対象DB(Sbjct)
+
+[![https://gyazo.com/d832c82d9dc711abbfe0c7ef8951e72f](https://i.gyazo.com/d832c82d9dc711abbfe0c7ef8951e72f.png)](https://gyazo.com/d832c82d9dc711abbfe0c7ef8951e72f)
+
+- 質問配列とDBの組み合わせ→使うプログラム名が異なる
+	- blastnだけが核酸配列レベルでの比較
+	- 残り全てはアミノ酸配列レベルの比較
+
+[![https://gyazo.com/1b65876d8b7842b6428a1706e1927b52](https://i.gyazo.com/1b65876d8b7842b6428a1706e1927b52.png)](https://gyazo.com/1b65876d8b7842b6428a1706e1927b52)
+
 #### 【応用2】BLAT
 
 ### 多重配列アラインメントと分子系統樹
