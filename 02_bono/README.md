@@ -143,6 +143,11 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
   - 現在は、表の5種類のDBがINSDCの対象
 [![https://gyazo.com/50a7d496b881d2c022bf9a15fecf893c](https://i.gyazo.com/50a7d496b881d2c022bf9a15fecf893c.png)](https://gyazo.com/50a7d496b881d2c022bf9a15fecf893c)
 
+- アクセッション番号
+	- INSDの登録(accession)番号（例: AB016472.1）
+		- 論文掲載の必須条件
+		- データを他の研究者に再利用してもらうことが研究の価値を高める上でとても大事
+	- 日本だとDDBJへ。日本語でのやりとり可
 
 #### DDBJ/EMBL/GenBank
 - 今はAnnotated sequencesと呼ばれている昔からあるDB
@@ -185,7 +190,7 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 	- 配列類似性検索へ応用
 		- [なぜ相同性じゃなく類似性か](http://togetter.com/li/307635)
 
-#### 【実習2】BLAST
+#### BLAST
 
 - BLASTとは
 	- Basic Local Alignment Search Tool
@@ -202,15 +207,56 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 [![https://gyazo.com/1b65876d8b7842b6428a1706e1927b52](https://i.gyazo.com/1b65876d8b7842b6428a1706e1927b52.png)](https://gyazo.com/1b65876d8b7842b6428a1706e1927b52)
 
+#### 【実習2】BLAST
+
 1. **"BLAST"** でググって、そのトップページを開く。
+
+##### 【復習】統合TV
+
+- NCBI BLASTの使い方〜基本編〜2017　 https://doi.org/10.7875/togotv.2017.023
+- 大量に検索する際には自分のパソコンにBLASTをインストールして使うことが多い
+	- Local BLASTの使い方〜導入・準備編(MacOSX版)〜2017 https://doi.org/10.7875/togotv.2017.031
+	- Local BLASTの使い方〜検索実行・オプション(MacOSX版)〜2017 https://doi.org/10.7875/togotv.2017.045
+
+#### BLAT
+
+- The BLAST-like alignment tool
+- DBがgenomeに特化した配列類似性検索
+	- genome landing toolとも呼ばれる
+- 企業には有償のライセンス
+	- 依然としてBLASTを使う例も多く
 
 #### 【応用2】BLAT
 
+
+##### 【復習】統合TV
+
+- UCSC BLATを使って、ウイルスの持ち出した宿主の遺伝子配列がコードされている領域をアミノ酸配列レベルでゲノム中から探し当てる　 https://doi.org/10.7875/togotv.2017.124
+- 
+#### ファイルフォーマット
+
+| ファイルフォーマット | ファイル拡張子|用途など|
+|----|----|----|
+|FASTA	| .fa .fasta | 塩基配列、アミノ酸配列 |
+|FASTQ|	.fq .fastq | NGSからの塩基配列とそのquality |
+|DDBJ(Genbank)|	.dbj (.gbk) | メタデータを含んだ塩基配列やアミノ酸配列の記述 |
+|SRA|	.sra | FASTQを圧縮したファイル形式|
+|SAM/BAM|	.sam .bam |リファレンスゲノム配列へのアラインメント|
+|GFF(GTF)|	.gff .gtf |ゲノムアノテーション|
+|BED|	.bed |ゲノムアノテーション|
+|VCF|	.vcf |バリアントの記述|
+
 ### 多重配列アラインメントと分子系統樹
 
-#### 【実習3】Clustalω
+#### 【実習3】ClustalOmega
 
+
+##### 【復習】統合TV
+
+- Clustal Omegaを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.019
+ 
 #### 【応用3】mafft
+
 
 ## <a name="pmd">タンパク質モチーフ・ドメイン検索</a>
 
