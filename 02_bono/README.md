@@ -43,6 +43,8 @@
   - 【実習4】Pfam
   - 【応用4】InterPro
     
+参考図書：[Dr. Bonoの生命科学データ解析](https://www.amazon.co.jp/dp/4895929019/)
+
 ----
 
 ### 講習に際しての注意とお願い
@@ -157,9 +159,9 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
   - DDBJにもあるので、そこから取ると早くダウンロードできる。
   - DDBJではDDBJ Sequence Read Archive (DRA)と呼ばれることも。 
 - 次世代シークエンサーのデータは以下の3つに収められている
-    - Next Generation reads (=SRA)
-    - Samples
-    - Studies 
+    - [Next Generation reads (=SRA or DRA)](https://www.ddbj.nig.ac.jp/dra/index.html)
+    - [Samples](https://www.ddbj.nig.ac.jp/biosample/index.html)
+    - [Studies](https://www.ddbj.nig.ac.jp/bioproject/index.html) 
 
 上述以外のDB(GEOやPubMedなど)はINSDCの枠外＝データ交換などがなされていない
 
@@ -209,14 +211,23 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 #### 【実習2】BLAST
 
-1. **"BLAST"** でググって、そのトップページを開く。
+1. **"NCBI BLAST"** でググって、そのトップページを開く
+2. Nucleotide BLASTを選ぶ
+3. FASTA sequence(query)をペーストする。興味ある配列がない場合は、
+4. 検索対象DBを選ぶ。今回は検索を早くするため、'Human genomic + transcript'を選ぶ。
+5. BLASTボタンを押す
+6. 結果が得られる
 
-##### 【復習】統合TV
+結果の見方等、詳細は統合TV参照。
+- 【統合TV】NCBI BLASTの使い方〜基本編〜2017 https://doi.org/10.7875/togotv.2017.023
 
-- NCBI BLASTの使い方〜基本編〜2017　 https://doi.org/10.7875/togotv.2017.023
-- 大量に検索する際には自分のパソコンにBLASTをインストールして使うことが多い
+##### 【発展】localBLASTと配列操作
+- 大量にBLAST検索する際には自分のパソコンにインストールして使う(**localBLAST**)
 	- Local BLASTの使い方〜導入・準備編(MacOSX版)〜2017 https://doi.org/10.7875/togotv.2017.031
 	- Local BLASTの使い方〜検索実行・オプション(MacOSX版)〜2017 https://doi.org/10.7875/togotv.2017.045
+- その際に必要になっている配列やファイル操作はBiopythonで処理することも
+	- https://qiita.com/search?q=biopython
+	- https://youtu.be/FQabMlA5esM?t=2h55m04s
 
 #### BLAT
 
@@ -228,10 +239,9 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 #### 【応用2】BLAT
 
-
-##### 【復習】統合TV
-
-- UCSC BLATを使って、ウイルスの持ち出した宿主の遺伝子配列がコードされている領域をアミノ酸配列レベルでゲノム中から探し当てる　 https://doi.org/10.7875/togotv.2017.124
+- BLASTと同じ検索を、BLATを用いてやってみよう。
+- 参考
+	- 【統合TV】UCSC BLATを使って、ウイルスの持ち出した宿主の遺伝子配列がコードされている領域をアミノ酸配列レベルでゲノム中から探し当てる　 https://doi.org/10.7875/togotv.2017.124
 - 
 #### ファイルフォーマット
 
@@ -247,6 +257,7 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 |VCF|	.vcf |バリアントの記述|
 
 ### 多重配列アラインメントと分子系統樹
+
 
 #### 【実習3】ClustalOmega
 
