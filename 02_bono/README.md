@@ -32,16 +32,16 @@
     - DDBJ/EMBL/GenBank
     - Sequence Read Archive (SRA)
    - RefSeq
-- [配列アラインメント](#sa)
-  - 大域的アラインメントと局所的アラインメント
+- [配列解析入門](#sa)
+  - [大域的アラインメントと局所的アラインメント](#psa)
     - 【実習2】BLAST
     - 【応用2】BLAT
-  - 多重配列アラインメントと分子系統樹
+  - [多重配列アラインメントと分子系統樹](#msa)
     - 【実習3】Clustalω
     - 【応用3】mafft
-- [タンパク質モチーフ・ドメイン検索](#pmd)
-  - 【実習4】Pfam
-  - 【応用4】InterPro
+  - [タンパク質モチーフ・ドメイン検索](#pmd)
+  	- 【実習4】Pfam
+  	- 【応用4】InterPro
     
 参考図書：[Dr. Bonoの生命科学データ解析](https://www.amazon.co.jp/dp/4895929019/)
 
@@ -174,11 +174,24 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 ----
 
-## <a name="sa">配列アラインメント</a>
+## <a name="sa">配列解析入門</a>
 
 配列解析の基本である配列アラインメントについて、BLASTを例にその検索アルゴリズムを解説する。
 
-### 大域的アラインメントと局所的アラインメント
+- ファイルフォーマット
+
+| ファイルフォーマット | ファイル拡張子|用途など|
+|----|----|----|
+|FASTA	| .fa .fasta | 塩基配列、アミノ酸配列 |
+|FASTQ|	.fq .fastq | NGSからの塩基配列とそのquality |
+|DDBJ(Genbank)|	.dbj (.gbk) | メタデータを含んだ塩基配列やアミノ酸配列の記述 |
+|SRA|	.sra | FASTQを圧縮したファイル形式|
+|SAM/BAM|	.sam .bam |リファレンスゲノム配列へのアラインメント|
+|GFF(GTF)|	.gff .gtf |ゲノムアノテーション|
+|BED|	.bed |ゲノムアノテーション|
+|VCF|	.vcf |バリアントの記述|
+
+### <a name="psa">大域的アラインメントと局所的アラインメント</a>
 
 ![大域的アラインメントと局所的アラインメント](http://upload.wikimedia.org/wikipedia/commons/4/4b/Global-local-alignment.png)
 
@@ -243,34 +256,30 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 - 参考
 	- 【統合TV】UCSC BLATを使って、ウイルスの持ち出した宿主の遺伝子配列がコードされている領域をアミノ酸配列レベルでゲノム中から探し当てる　 https://doi.org/10.7875/togotv.2017.124
 - 
-#### ファイルフォーマット
 
-| ファイルフォーマット | ファイル拡張子|用途など|
-|----|----|----|
-|FASTA	| .fa .fasta | 塩基配列、アミノ酸配列 |
-|FASTQ|	.fq .fastq | NGSからの塩基配列とそのquality |
-|DDBJ(Genbank)|	.dbj (.gbk) | メタデータを含んだ塩基配列やアミノ酸配列の記述 |
-|SRA|	.sra | FASTQを圧縮したファイル形式|
-|SAM/BAM|	.sam .bam |リファレンスゲノム配列へのアラインメント|
-|GFF(GTF)|	.gff .gtf |ゲノムアノテーション|
-|BED|	.bed |ゲノムアノテーション|
-|VCF|	.vcf |バリアントの記述|
 
-### 多重配列アラインメントと分子系統樹
+### <a name="msa">多重配列アラインメントと分子系統樹</a>
 
 
 #### 【実習3】ClustalOmega
 
 
-##### 【復習】統合TV
 
-- Clustal Omegaを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.019
- 
+
+- 【統合TV】Clustal Omegaを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.019
+
 #### 【応用3】mafft
 
+- Clustal Omegaと同じマルチプルアラインメントを、MAFFTを使ってやってみよう。
+	- 【統合TV】MAFFTを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.035
 
-## <a name="pmd">タンパク質モチーフ・ドメイン検索</a>
+### <a name="pmd">タンパク質モチーフ・ドメイン検索</a>
 
-### 【実習4】Pfam
+#### 【実習4】InterProとPfam
 
-### 【応用4】InterPro
+- 【統合TV】Pfamを使ってタンパク質のドメインを調べる 2017　http://doi.org/10.7875/togotv.2017.125
+
+
+#### 【応用4】DoMosaics
+
+- 【統合TV】 DoMosaicsを使ってドメイン構造と系統樹を可視化する http://doi.org/10.7875/togotv.2017.077
