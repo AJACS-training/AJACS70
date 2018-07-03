@@ -37,7 +37,7 @@
     - 【実習2】BLAST
     - 【応用2】BLAT
   - [多重配列アラインメントと分子系統樹](#msa)
-    - 【実習3】Clustalω
+    - 【実習3】Clustal Omega
     - 【応用3】mafft
   - [タンパク質モチーフ・ドメイン検索](#pmd)
   	- 【実習4】Pfam
@@ -59,16 +59,19 @@
 ----
 
 ## <a name="togotv">研究現場で頻繁に使われるデータベースやツールを知る</a>
-### [統合TV](https://dbcls.rois.ac.jp/services.html#TogoTV_ja)
-- 生命科学分野の有用なデータベースやツールの使い方を動画で紹介するウェブサイト
-    - http://togotv.dbcls.jp/ [![https://gyazo.com/acd9a661ebb043e62cc50176d6ad69ca](https://i.gyazo.com/acd9a661ebb043e62cc50176d6ad69ca.png)](http://togotv.dbcls.jp/)
-    - YouTube版もあります　http://youtube.com/togotv/
-    - ウェブサイトへのアクセスから結果の見方まで、操作の一挙手一投足がわかります。
-        - 講義・講習などの参考資料や後輩指導の教材として利用できます。
-        - 本講習中、本家サイトが繋がらない時は、統合TVのYouTube版を見ればおおよその内容がわかるようになっています。
-        - 今回の講習に関連する内容の多くは、「発現解析」タグのついた動画にあります。
-        - 過去の講習会の内容はそのほとんどが統合TVに収録されており、いつでもどこでも繰り返し復習できるようになっています。
-    - お探しの動画が見つからない or 統合TV未掲載の場合は、[統合TV番組リクエストフォーム](http://togotv.dbcls.jp/ja/contact.html)へどうぞ!
+### [統合TV](https://dbcls.rois.ac.jp/services.html#TogoTV_ja)とは？
+- 生命科学分野の有用なデータベースやツールの使い方を動画で紹介するウェブサイト http://togotv.dbcls.jp/
+
+[![https://gyazo.com/acd9a661ebb043e62cc50176d6ad69ca](https://i.gyazo.com/acd9a661ebb043e62cc50176d6ad69ca.png)](http://togotv.dbcls.jp/)
+
+
+- 本講習すべての課題に対応する統合TVがあります
+	- ウェブサイトへのアクセスから結果の見方まで、操作の一挙手一投足がわかります。
+	- 講義・講習などの参考資料や後輩指導の教材として利用できます。
+    - 本講習中、本家サイトが繋がらない時は、統合TVのYouTube版を見ればおおよその内容がわかるようになっています。
+    - 今回の講習に関連する内容の多くは、[「ゲノム、核酸配列・構造解析」のカテゴリ](http://togotv.dbcls.jp/genome.html)にあります。
+ - 過去の講習会の内容はそのほとんどが統合TVに収録されており、いつでもどこでも繰り返し復習できるようになっています。
+ 	- お探しの動画が見つからない or 統合TV未掲載の場合は、[統合TV番組リクエストフォーム](http://togotv.dbcls.jp/ja/contact.html)へどうぞ!
     - [統合TVを作ってくれる方、募集中!!](https://twitter.com/bonohu/status/747954940157399040)
 
 ----
