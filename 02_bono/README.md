@@ -224,12 +224,18 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 #### 【実習2】BLAST
 
-1. **"NCBI BLAST"** でググって、そのトップページを開く
-2. Nucleotide BLASTを選ぶ
-3. FASTA sequence(query)をペーストする。興味ある配列がない場合は、
-4. 検索対象DBを選ぶ。今回は検索を早くするため、'Human genomic + transcript'を選ぶ。
-5. BLASTボタンを押す
-6. 結果が得られる
+1. **"NCBI BLAST"** でググって、そのトップページを開く 
+[![https://gyazo.com/3533a201cd0309b58da2a344b8a4d552](https://i.gyazo.com/3533a201cd0309b58da2a344b8a4d552.png)](https://gyazo.com/3533a201cd0309b58da2a344b8a4d552)
+2. Nucleotide BLASTを選ぶ 
+[![https://gyazo.com/3f19305b9ec6f99922af952ee1f7c340](https://i.gyazo.com/3f19305b9ec6f99922af952ee1f7c340.png)](https://gyazo.com/3f19305b9ec6f99922af952ee1f7c340)
+3. FASTA sequence(query)をペーストする。興味ある配列がない場合は、[例1](http://getentry.ddbj.nig.ac.jp/getentry/na/LC170036/?format=fasta&filetype=html&trace=true&show_suppressed=false&limit=10)か[例2](http://getentry.ddbj.nig.ac.jp/getentry/na/AB281053/?format=fasta&filetype=html&trace=true&show_suppressed=false&limit=10)を使いましょう。
+4. 検索対象DBを選ぶ。まずは、デフォルトのまま(nr/nt)で。
+5. BLASTボタンを押すと、検索が始まり、以下のような結果が得られる。
+[![https://gyazo.com/3aa5210a48beb6d0efb1634b16e119f7](https://i.gyazo.com/3aa5210a48beb6d0efb1634b16e119f7.png)](https://gyazo.com/3aa5210a48beb6d0efb1634b16e119f7)
+[![https://gyazo.com/00a4946753a82898c6370643d152cd4e](https://i.gyazo.com/00a4946753a82898c6370643d152cd4e.png)](https://gyazo.com/00a4946753a82898c6370643d152cd4e)
+[![https://gyazo.com/25e505d625c7b585cd8befa67909158f](https://i.gyazo.com/25e505d625c7b585cd8befa67909158f.png)](https://gyazo.com/25e505d625c7b585cd8befa67909158f)
+6. 検索対象DBを'Human genomic + transcript'にするなど、パラメータを変えて検索してみよう。
+
 
 結果の見方等、詳細は統合TV参照。
 - 【統合TV】NCBI BLASTの使い方〜基本編〜2017 https://doi.org/10.7875/togotv.2017.023
@@ -260,12 +266,25 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 ### <a name="msa">多重配列アラインメントと分子系統樹</a>
 
 3本以上の配列でできる限りギャップを入れないようにして、似たアミノ酸や塩基を並べる手法が多重配列アラインメント(multiple sequence alignment)である。
-多重配列アラインメントと分子系統樹は密接な関係にあって、アラインメントした結果から分子系統樹を推定し、その結果からアラインメントを改良していく、ということを繰り返す。
 
-#### 【実習3】ClustalOmega
+#### 【実習3】Clustal Omega
 
-これまで広く使われてきたClustalWという多重配列アラインメントソフトウェアの後継がClustalOmegaである。
+これまで広く使われてきたClustalWという多重配列アラインメントソフトウェアの後継がClustal Omegaである。
 
+
+1. **clustal omega** でググって、[そのトップページ(EBIのサイト)](https://www.ebi.ac.uk/Tools/msa/clustalo/)を開く
+[![https://gyazo.com/8e04289430f4608fd5f426fb85c47a91](https://i.gyazo.com/8e04289430f4608fd5f426fb85c47a91.png)](https://gyazo.com/8e04289430f4608fd5f426fb85c47a91)
+2. 多重配列アラインメントしたい配列群(multi-FASTAフォーマット)を貼り付ける（[テスト配列（真核高等生物のHIF1A）](https://raw.githubusercontent.com/AJACS-training/AJACS70/master/02_bono/HIF1A.txt)）
+[![https://gyazo.com/1dc45c4c68badee0e2b7af0b2db12d0e](https://i.gyazo.com/1dc45c4c68badee0e2b7af0b2db12d0e.png)](https://gyazo.com/1dc45c4c68badee0e2b7af0b2db12d0e)
+3. Submitを押して計算結果が得られるのを待つ
+4. しばらく待つと以下のような多重配列アラインメントが得られる
+[![https://gyazo.com/f06e0e06226e8d992f5bc570991e0ada](https://i.gyazo.com/f06e0e06226e8d992f5bc570991e0ada.png)](https://gyazo.com/f06e0e06226e8d992f5bc570991e0ada)
+5. Phylogenetic Treeを押すと分子系統樹が得られ、Tree Dataにあるファイルを使って他の系統樹描画ソフトウェアで利用することもできる
+[![https://gyazo.com/f514194cf26002a70ab2b2eb5322b7da](https://i.gyazo.com/f514194cf26002a70ab2b2eb5322b7da.png)](https://gyazo.com/f514194cf26002a70ab2b2eb5322b7da)
+6. Download Alignment Fileを押すと、この結果がテキスト形式で得られる
+
+
+結果の見方等、詳細は統合TV参照。
 - 【統合TV】Clustal Omegaを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.019
 
 #### 【応用3】mafft
