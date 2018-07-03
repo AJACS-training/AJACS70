@@ -19,7 +19,7 @@
 
 ### プログラム
 #### 7月10日(火)
-9:35-11:00 「[NBDCの紹介とNBDCが提供するサービス](https://github.com/AJACS-training/AJACS70/blob/master/01_minowa/)」    
+ 9:35-11:00　「[NBDCの紹介とNBDCが提供するサービス](https://github.com/AJACS-training/AJACS70/blob/master/01_minowa/)」    
 箕輪 真理  
 （科学技術振興機構バイオサイエンスデータベースセンター ／ 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター)  
 
@@ -29,7 +29,7 @@
 （情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター）
 
 
-14:20-15:50 「[化合物データベース](https://github.com/AJACS-training/AJACS70/blob/master/03_yamada/)」  
+14:20-15:50　「[化合物データベース](https://github.com/AJACS-training/AJACS70/blob/master/03_yamada/)」  
 山田 一作  
 (野口研究所)
 
