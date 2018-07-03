@@ -258,9 +258,8 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 #### 【応用2】BLAT
 
-- BLASTと同じ検索を、BLATを用いてやってみよう。
-- 参考
-	- 【統合TV】UCSC BLATを使って、ウイルスの持ち出した宿主の遺伝子配列がコードされている領域をアミノ酸配列レベルでゲノム中から探し当てる　 https://doi.org/10.7875/togotv.2017.124
+BLASTと同じ検索を、BLATを用いてやってみよう。統合TVを参考に。
+- 【統合TV】UCSC BLATを使って、ウイルスの持ち出した宿主の遺伝子配列がコードされている領域をアミノ酸配列レベルでゲノム中から探し当てる　 https://doi.org/10.7875/togotv.2017.124
 
 
 ### <a name="msa">多重配列アラインメントと分子系統樹</a>
@@ -289,16 +288,32 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 
 #### 【応用3】mafft
 
-- Clustal Omegaと同じマルチプルアラインメントを、MAFFTを使ってやってみよう。
-	- 【統合TV】MAFFTを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.035
+Clustal Omegaと同じマルチプルアラインメントを、MAFFTを使ってやってみよう。以下の統合TVを参考に。
+- 【統合TV】MAFFTを使ってマルチプルアラインメントを行う 　https://doi.org/10.7875/togotv.2015.035
 
 ### <a name="pmd">タンパク質モチーフ・ドメイン検索</a>
 
 #### 【実習4】InterProとPfam
+InterProは数多くあるタンパク質モチーフやドメインの統合データベースです。
 
+1. **interproscan** でググって、[そのトップページ(EBIのサイト)](https://www.ebi.ac.uk/interpro/search/sequence-search)を開く
+[![https://gyazo.com/965eb18e02f6187d562ca82769ba0e5a](https://i.gyazo.com/965eb18e02f6187d562ca82769ba0e5a.png)](https://gyazo.com/965eb18e02f6187d562ca82769ba0e5a)
+2. 検索したいタンパク質配列を貼り付ける。自らの配列を持ってない場合は、[上で使ったテスト配列（真核高等生物のHIF1A）の一番先頭のエントリだけをコピー＆ペーストしてみましょう](https://raw.githubusercontent.com/AJACS-training/AJACS70/master/02_bono/HIF1A.txt)
+3. Submitを押してしばらく待つ。サーバーの混み具合によっては、時間がかかるときもあります。
+[![https://gyazo.com/cb6e94df908c5cdd62f6ae6be11d146a](https://i.gyazo.com/cb6e94df908c5cdd62f6ae6be11d146a.png)](https://gyazo.com/cb6e94df908c5cdd62f6ae6be11d146a)
+4. 結果が得られる
+[![https://gyazo.com/a83b60680841f2134da300a775921f9e](https://i.gyazo.com/a83b60680841f2134da300a775921f9e.png)](https://gyazo.com/a83b60680841f2134da300a775921f9e)
+5. PFで始まるIDがPfamのエントリです。クリックしてみましょう。
+[![https://gyazo.com/0b7f8655899a33348e21185776948425](https://i.gyazo.com/0b7f8655899a33348e21185776948425.png)](https://gyazo.com/0b7f8655899a33348e21185776948425)
+6. 左のタブの'Domain organisation'をクリックするとこのドメインを持つ公共DB中のタンパク質がそのドメイン構成とともに表示されます
+[![https://gyazo.com/238a2a6347f1495d4a0225e0e7c8579a](https://i.gyazo.com/238a2a6347f1495d4a0225e0e7c8579a.png)](https://gyazo.com/238a2a6347f1495d4a0225e0e7c8579a)
+
+結果の見方等、詳細は統合TV参照。
 - 【統合TV】Pfamを使ってタンパク質のドメインを調べる 2017　http://doi.org/10.7875/togotv.2017.125
 
 
 #### 【応用4】DoMosaics
+
+手持ちのタンパク質配列セットに対して、そのドメイン構造をPfamのDB全てに対して検索し、それらの系統関係もローカルに計算して併せて表示するというツールです。実行にはJavaのプログラムが実行できる環境が必要です。
 
 - 【統合TV】 DoMosaicsを使ってドメイン構造と系統樹を可視化する http://doi.org/10.7875/togotv.2017.077
