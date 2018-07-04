@@ -62,15 +62,14 @@
 ### [統合TV](https://dbcls.rois.ac.jp/services.html#TogoTV_ja)とは？
 - 生命科学分野の有用なデータベースやツールの使い方を動画で紹介するウェブサイト http://togotv.dbcls.jp/
 
-[![https://gyazo.com/acd9a661ebb043e62cc50176d6ad69ca](https://i.gyazo.com/acd9a661ebb043e62cc50176d6ad69ca.png)](http://togotv.dbcls.jp/)
+[![Image from Gyazo](https://i.gyazo.com/64aee461a45a447ecfad95be2dcd42ef.jpg)](https://gyazo.com/64aee461a45a447ecfad95be2dcd42ef)
 
-
-- 本講習すべての課題に対応する統合TVがあります
+- **本講習のすべての課題** に対応するチュートリアル動画が統合TVがあります
 	- ウェブサイトへのアクセスから結果の見方まで、操作の一挙手一投足がわかります。
 	- 講義・講習などの参考資料や後輩指導の教材として利用できます。
     - 本講習中、本家サイトが繋がらない時は、統合TVのYouTube版を見ればおおよその内容がわかるようになっています。
-    - 今回の講習に関連する内容の多くは、[「ゲノム、核酸配列・構造解析」のカテゴリ](http://togotv.dbcls.jp/genome.html)にあります。
- - 過去の講習会の内容はそのほとんどが統合TVに収録されており、いつでもどこでも繰り返し復習できるようになっています。
+    - その他、今回の講習に関連する内容の多くは、[「ゲノム、核酸配列・構造解析」のカテゴリ](http://togotv.dbcls.jp/genome.html)にあります。
+ - **過去の講習会の内容はそのほとんどが統合TVに収録**されており、いつでもどこでも**繰り返し復習できる**ようになっています。
  	- お探しの動画が見つからない or 統合TV未掲載の場合は、[統合TV番組リクエストフォーム](http://togotv.dbcls.jp/ja/contact.html)へどうぞ!
     - [統合TVを作ってくれる方、募集中!!](https://twitter.com/bonohu/status/747954940157399040)
 
@@ -239,9 +238,9 @@ Ensembl Genome Browser でも上記のFAM32Aを検索してみよう。
 [![https://gyazo.com/25e505d625c7b585cd8befa67909158f](https://i.gyazo.com/25e505d625c7b585cd8befa67909158f.png)](https://gyazo.com/25e505d625c7b585cd8befa67909158f)
 6. 検索対象DBを'Human genomic + transcript'にするなど、パラメータを変えて検索してみよう。
 
+##### 【復習】NCBI BLASTの統合TV
 
-結果の見方等、詳細は統合TV参照。
-- 【統合TV】NCBI BLASTの使い方〜基本編〜2017 https://doi.org/10.7875/togotv.2017.023
+- NCBI BLASTの使い方〜基本編〜2017 https://doi.org/10.7875/togotv.2017.023
 
 ##### 【発展】localBLASTと配列操作
 - 大量にBLAST検索する際には自分のパソコンにインストールして使う(**localBLAST**)
@@ -286,8 +285,9 @@ BLASTと同じ検索を、BLATを用いてやってみよう。統合TVを参考
 6. Download Alignment Fileを押すと、この結果がテキスト形式で得られる
 
 
-結果の見方等、詳細は統合TV参照。
-- 【統合TV】Clustal Omegaを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.019
+##### 【復習】Clustal Omegaの統合TV
+
+- Clustal Omegaを使ってマルチプルアラインメントを行う　 https://doi.org/10.7875/togotv.2015.019
 
 #### 【応用3】mafft
 
@@ -311,8 +311,9 @@ InterProは数多くあるタンパク質モチーフやドメインの統合デ
 6. 左のタブの'Domain organisation'をクリックするとこのドメインを持つ公共DB中のタンパク質がそのドメイン構成とともに表示されます
 [![https://gyazo.com/238a2a6347f1495d4a0225e0e7c8579a](https://i.gyazo.com/238a2a6347f1495d4a0225e0e7c8579a.png)](https://gyazo.com/238a2a6347f1495d4a0225e0e7c8579a)
 
-結果の見方等、詳細は統合TV参照。
-- 【統合TV】Pfamを使ってタンパク質のドメインを調べる 2017　http://doi.org/10.7875/togotv.2017.125
+##### 【復習】InterProとPfamの統合TV
+
+- Pfamを使ってタンパク質のドメインを調べる 2017　http://doi.org/10.7875/togotv.2017.125
 
 
 #### 【応用4】DoMosaics
