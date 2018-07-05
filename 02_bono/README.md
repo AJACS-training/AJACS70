@@ -1,13 +1,14 @@
 # ゲノムデータベースとそれを活用した配列解析入門 at AJACS筑波4
 
-情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター  
-[坊農 秀雅](http://dbcls.jp/~bono/) bono@dbcls.rois.ac.jp  
-2018年7月10日
-
+[情報・システム研究機構](http://www.rois.ac.jp) [データサイエンス共同利用基盤施設](https://ds.rois.ac.jp) [ライフサイエンス統合データベースセンター](https://dbcls.rois.ac.jp)
+[坊農 秀雅](http://data.dbcls.jp/~bono/) bono@dbcls.rois.ac.jp  
+2018年7月10日 11:10-14:10
 
 ----
 
 これは統合データベース講習会AJACS筑波4「ゲノムデータベースとそれを活用した配列解析入門」の資料です。
+
+© 2018 DBCLS, licensed under [Creative Commons Attribution 4.0 International license (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/)
 
 ----
 
@@ -321,3 +322,5 @@ InterProは数多くあるタンパク質モチーフやドメインの統合デ
 手持ちのタンパク質配列セットに対して、そのドメイン構造をPfamのDB全てに対して検索し、それらの系統関係もローカルに計算して併せて表示するというツールです。実行にはJavaのプログラムが実行できる環境が必要です。
 
 - 【統合TV】 DoMosaicsを使ってドメイン構造と系統樹を可視化する http://doi.org/10.7875/togotv.2017.077
+
+----
