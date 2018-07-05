@@ -25,7 +25,6 @@
 
 
 11:10-14:10　「[ゲノムデータベースとそれを活用した配列解析入門](https://github.com/AJACS-training/AJACS70/blob/master/02_bono/)」（参考図書：[Dr. Bonoの生命科学データ解析](https://www.medsi.co.jp/books/products/detail.php?product_id=3588) ）
-
 坊農 秀雅  
 （情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター）
 （12:00−13:00　　昼食休憩予定）
