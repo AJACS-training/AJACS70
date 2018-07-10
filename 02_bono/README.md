@@ -107,7 +107,7 @@
 [![https://gyazo.com/df2e2e72be244cf4060bba364fc542e3](https://i.gyazo.com/df2e2e72be244cf4060bba364fc542e3.jpg)](https://gyazo.com/df2e2e72be244cf4060bba364fc542e3)
 3. 最寄りのミラーサイトに接続するか訊いてくるので、指示に従う。
 [![https://gyazo.com/0a10cb8a25d2a3919506b7ab6fb5335f](https://i.gyazo.com/0a10cb8a25d2a3919506b7ab6fb5335f.png)](https://gyazo.com/0a10cb8a25d2a3919506b7ab6fb5335f)
-4. Genome Browserのページが開くので、生物種(**Human**)とアッセンブリ(**Feb.2009/(GRC37/hg19)**)を選んで、検索後を入力する。[![https://gyazo.com/05ab6f4871c60485d4c54828a7f5f972](https://i.gyazo.com/05ab6f4871c60485d4c54828a7f5f972.png)](https://gyazo.com/05ab6f4871c60485d4c54828a7f5f972)
+4. Genome Browserのページが開くので、生物種(**Human**)とアッセンブリ(**Feb.2009/(GRC37/hg19)**)を選んで、検索語を入力する。[![https://gyazo.com/05ab6f4871c60485d4c54828a7f5f972](https://i.gyazo.com/05ab6f4871c60485d4c54828a7f5f972.png)](https://gyazo.com/05ab6f4871c60485d4c54828a7f5f972)
 5. FAM32A遺伝子のゲノム領域が表示される。[![https://gyazo.com/2032119adde3af87b91266dc6197e0a5](https://i.gyazo.com/2032119adde3af87b91266dc6197e0a5.png)](https://gyazo.com/2032119adde3af87b91266dc6197e0a5)
 6. "Regulation"の"ENC TF Binding..."を"hide"から"show"に変更して、"refresh"ボタンを押す。[![https://gyazo.com/ef4f449cc185c0cd917c978ed356ff93](https://i.gyazo.com/ef4f449cc185c0cd917c978ed356ff93.png)](https://gyazo.com/ef4f449cc185c0cd917c978ed356ff93)
 7. 転写因子結合サイトの情報が追加される。[![https://gyazo.com/703be239476dfeae1985eb0348048bc2](https://i.gyazo.com/703be239476dfeae1985eb0348048bc2.png)](https://gyazo.com/703be239476dfeae1985eb0348048bc2)
